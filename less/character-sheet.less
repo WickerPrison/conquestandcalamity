@@ -48,32 +48,43 @@
         }
     }
 
-    .skillSection {
-        width: 95%;
-        margin: auto;
-        
+    
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 505px;
+        margin-top: 15px;
+        vertical-align: middle;
+
         .skillHeader {
             border-bottom: 1px solid white;
             margin-bottom: 5px;
+            display: grid;
+            grid-template-columns: 35% 15% 10% 15%;
+            width: 45%;
 
             div{
+                margin-top: auto;
                 text-align: center;
             }
 
             .skillSectionName {
-                font-size: large;
-                text-align: left;
-            }
-
-            .skillHeaderRanks {
-                grid-column: span 5;
                 text-align: left;
             }
         }
 
+        .skillSectionHeader {
+            grid-column: span 4;
+            margin-bottom: 5px;
+        }
+
         .skill {
+            width: 45%;
             display: grid;
-            grid-template-columns: 35% 15% 10% repeat(5, 8%);
+            grid-template-columns: 35% 15% 10% 15% 10% 10%;
+            grid-column: span 4;
 
             .skillName {
                 font-size: small;
@@ -81,17 +92,23 @@
 
             input {
                 margin: auto;
-                width: 10px;
-                height: 10px;
+            }
+
+            .rankInput {
+                height: 17px;
+                text-align: center;
+            }
+
+            .rankButton{
+                padding: 0;
+                width: 16px;
+                height: 16px;
+                min-height: 16px;
+                margin: auto;
+                padding: 0;
+                text-align: center;
+                vertical-align: middle;
             }
         }
-    }
-
-    .skills {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: 550px;
-        margin-top: 15px;
     }
 }
