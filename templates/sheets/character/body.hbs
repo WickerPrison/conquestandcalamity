@@ -1,66 +1,17 @@
 <div>
-    <div class="statsGrid">
-        {{#each actor.system.attributes}}
-            <div> {{> "systems/conquestandcalamity/templates/partials/stat-box.hbs" this}}</div>
-        {{/each}}
-    </div>
-    <div class="skills">
-        <div class="skillsSpacer"></div>
-        <div class="skillHeader skill">
-            <div class="skillSectionName">Skill</div>
-            <div class="">Class</div>
-            <div class="">SP</div>
-            <div class="skillHeaderRanks">Ranks</div>
+    <nav class="tabs menuTabs" data-group="primary-tabs">
+        <a class="item" data-tab="tab1" data-group="primary-tabs">Resources</a>
+        <a class="item" data-tab="tab2" data-group="primary-tabs">Stats</a>
+    </nav>
+
+    <section class="content">
+        <div class="tab" data-tab="tab1" data-group="primary-tabs">
+            tab2
         </div>
-        <div class="skillSectionHeader">Combat</div>
-        {{#each actor.system.skills as |skill|}}
-            {{#if (eq skill.category "combat")}}
-                <div class="skill"> {{> "systems/conquestandcalamity/templates/partials/skill.hbs" skill=this category="combat"}}</div>
-            {{/if}}
-        {{/each}}
-        <div class="skillSectionHeader">General</div>
-        {{#each actor.system.skills as |skill|}}
-            {{#if (eq skill.category "general")}}
-                <div class="skill"> {{> "systems/conquestandcalamity/templates/partials/skill.hbs" skill=this category="general"}}</div>
-            {{/if}}
-        {{/each}}
-        <div class="skillSectionHeader">Crafting</div>
-        {{#each actor.system.skills as |skill|}}
-            {{#if (eq skill.category "crafting")}}
-                <div class="skill"> {{> "systems/conquestandcalamity/templates/partials/skill.hbs" skill=this category="crafting"}}</div>
-            {{/if}}
-        {{/each}}
-        <div class="skillsMidSpacer"></div>
-        <div class="skillHeader skill">
-            <div class="skillSectionName">Skill</div>
-            <div class="">Class</div>
-            <div class="">SP</div>
-            <div class="skillHeaderRanks">Ranks</div>
+
+        <div class="tab" data-tab="tab2" data-group="primary-tabs">
+            {{> "systems/conquestandcalamity/templates/partials/stats.hbs"}}
         </div>
-        <div class="skillSectionHeader">Knowledge</div>
-        {{#each actor.system.skills as |skill|}}
-            {{#if (eq skill.category "knowledge")}}
-                <div class="skill"> {{> "systems/conquestandcalamity/templates/partials/skill.hbs" skill=this category="knowledge"}}</div>
-            {{/if}}
-        {{/each}}
-        <div class="skillSectionHeader">Magic</div>
-        {{#each actor.system.skills as |skill|}}
-            {{#if (eq skill.category "magic")}}
-                <div class="skill"> {{> "systems/conquestandcalamity/templates/partials/skill.hbs" skill=this category="magic"}}</div>
-            {{/if}}
-        {{/each}}
-        <div class="skillSectionHeader">Speech</div>
-        {{#each actor.system.skills as |skill|}}
-            {{#if (eq skill.category "speech")}}
-                <div class="skill"> {{> "systems/conquestandcalamity/templates/partials/skill.hbs" skill=this category="speech"}}</div>
-            {{/if}}
-        {{/each}}
-        <div class="skillSectionHeader">Covert</div>
-        {{#each actor.system.skills as |skill|}}
-            {{#if (eq skill.category "covert")}}
-                <div class="skill"> {{> "systems/conquestandcalamity/templates/partials/skill.hbs" skill=this category="covert"}}</div>
-            {{/if}}
-        {{/each}}
-        <div class="skillsSpacer"></div>
-    </div>
+
+    </section>
 </div>

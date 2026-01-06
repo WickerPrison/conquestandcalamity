@@ -16,7 +16,6 @@ Hooks.once("init", async () => {
     
     const DocumentSheetConfig = foundry.applications.apps.DocumentSheetConfig;
     DocumentSheetConfig.unregisterSheet(Actor, "core", foundry.appv1.sheets.ActorSheet);
-    
     DocumentSheetConfig.registerSheet(Actor, "conquestandcalamity", conquestandcalamityCharacterSheet, { types: ["character"], makeDefault: true, label: "CONQUESTANDCALAMITY.SheetClassCharacter"});
 
     // Load all Partial-Handlebar Files
@@ -42,6 +41,7 @@ function preloadHandlebarsTemplates() {
         "systems/conquestandcalamity/templates/partials/stat-box.hbs",
         "systems/conquestandcalamity/templates/partials/skill.hbs",
         "systems/conquestandcalamity/templates/partials/skill-section.hbs",
+        "systems/conquestandcalamity/templates/partials/stats.hbs",
     ];
     
     return loadTemplates(templatePaths);
