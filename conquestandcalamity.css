@@ -30,6 +30,7 @@
   border: 2px solid white;
   display: block;
   padding: 5px;
+  border-radius: 5px;
 }
 .conquestandcalamity.sheet.characterSheet .statsGrid .statBox .statName {
   text-align: center;
@@ -45,6 +46,14 @@
   height: 505px;
   margin-top: 15px;
   vertical-align: middle;
+}
+.conquestandcalamity.sheet.characterSheet .skills .skillsSpacer {
+  flex-basis: 100%;
+  width: 2.5%;
+}
+.conquestandcalamity.sheet.characterSheet .skills .skillsMidSpacer {
+  flex-basis: 100%;
+  width: 5%;
 }
 .conquestandcalamity.sheet.characterSheet .skills .skillHeader {
   border-bottom: 1px solid white;
