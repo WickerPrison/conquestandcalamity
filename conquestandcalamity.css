@@ -49,11 +49,11 @@
 }
 .conquestandcalamity.sheet.characterSheet .skills .skillsSpacer {
   flex-basis: 100%;
-  width: 2.5%;
+  width: 2%;
 }
 .conquestandcalamity.sheet.characterSheet .skills .skillsMidSpacer {
   flex-basis: 100%;
-  width: 5%;
+  width: 6%;
 }
 .conquestandcalamity.sheet.characterSheet .skills .skillHeader {
   border-bottom: 1px solid white;
