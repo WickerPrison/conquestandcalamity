@@ -299,6 +299,14 @@
                     "category": "knowledge"
                 },
                 {
+                    "name": "____________",
+                    "attribute": ["intellect"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "knowledge"
+                },
+                {
                     "name": "Skulduggery",
                     "attribute": ["cunning"],
                     "classSkill": false,
