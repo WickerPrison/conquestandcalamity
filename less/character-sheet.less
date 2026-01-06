@@ -1,0 +1,97 @@
+// main: ./conquestandcalamity.less
+.conquestandcalamity.sheet.characterSheet {
+    .sheet{
+        width: 700px;
+        height: 580px;
+    }
+
+    .headerBox {
+        float: left;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 2px solid white;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+
+        .infoFieldLabel {
+            width: 50%;
+            flex-basis: 50%;
+            flex-shrink: 0;
+        }
+
+        .classes{
+            width: 100%;
+            flex-basis: 100%;
+        }
+    }
+
+    .statsGrid{
+        display: grid;
+        grid-template-columns: 15% 15% 15% 15% 15% 15%;
+        margin: 2px 0;
+        column-gap: 2%;
+
+        .statBox {
+            border: 2px solid white;
+            display: block;
+            padding: 5px;
+
+            .statName{
+                text-align: center;
+            }
+
+            .statValue {
+                text-align: center;
+                font-size: large;
+            }
+        }
+    }
+
+    .skillSection {
+        width: 95%;
+        margin: auto;
+        
+        .skillHeader {
+            border-bottom: 1px solid white;
+            margin-bottom: 5px;
+
+            div{
+                text-align: center;
+            }
+
+            .skillSectionName {
+                font-size: large;
+                text-align: left;
+            }
+
+            .skillHeaderRanks {
+                grid-column: span 5;
+                text-align: left;
+            }
+        }
+
+        .skill {
+            display: grid;
+            grid-template-columns: 35% 15% 10% repeat(5, 8%);
+
+            .skillName {
+                font-size: small;
+            }
+
+            input {
+                margin: auto;
+                width: 10px;
+                height: 10px;
+            }
+        }
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 550px;
+        margin-top: 15px;
+    }
+}

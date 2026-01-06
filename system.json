@@ -1,0 +1,25 @@
+{
+    "id":"conquestandcalamity",
+    "title": "Age of Conquest and Calamity Core System",
+    "description": "The Core System for Age of Conquest and Calamity",
+    "version": "0.0.3",
+    "authors": {
+        "name": "WickerPrison"
+    },
+    "compatibility":{
+        "minimum": 13,
+        "verified": "13.351",
+        "maximum": "13"
+    },
+    "esmodules": [
+        "conquestandcalamity.js"
+    ],
+    "styles": [
+        "conquestandcalamity.css"
+    ],
+    "socket": false,
+    "grid": {
+        "distance": 1,
+        "units": "cm"
+    }
+}

@@ -1,0 +1,15 @@
+<div class="skillSection">
+
+    <div class="skillHeader skill">
+        <div class="skillSectionName">{{name}}</div>
+        <div class="">Class</div>
+        <div class="">SP</div>
+        <div class="skillHeaderRanks">Ranks</div>
+
+    </div>
+    {{#each actor.system.skills as |skill|}}
+        {{#if (eq skill.category ../category)}}
+            <div> {{> "systems/conquestandcalamity/templates/partials/skill.hbs" skill=this category=../category}}</div>
+        {{/if}}
+    {{/each}}
+</div>

@@ -1,0 +1,348 @@
+{
+    "Actor":{
+        "types":[
+            "character"
+        ],
+
+        "character": {
+            "name": "Griffo",
+            "race": "Halfling",
+            "background": "Cursed",
+            "field": "Scholarly Magic",
+            "classes": ["Necromancer", "Researcher"],
+            "mDef": 1,
+            "rDef": 2,
+            "hp":{
+                "max": 15,
+                "current": 13,
+                "temp": 0
+            },
+            "stamina":{
+                "max": 0,
+                "current": 0
+            },
+            "movementPoints": 15,
+            "healingResistance": 0,
+            "damageReduction": 0,
+            "devotion": 0,
+            "attributes":[
+                { "name": "Agility", "value": 0 },
+                { "name": "Brawn", "value": 0 },
+                { "name": "Cunning", "value": 0 },
+                { "name": "Intellect", "value": 0 },
+                { "name": "Presence", "value": 0 },
+                { "name": "Willpower", "value": 0 }
+            ],
+            "skills": [
+                {
+                    "name": "Brawl",
+                    "attribute": ["brawn"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "combat"
+                },
+                {
+                    "name": "Heavy Weapons",
+                    "attribute": ["brawn"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "combat"
+                },
+                {
+                    "name": "Light Weapons",
+                    "attribute": ["brawn"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "combat"
+                },
+                {
+                    "name": "Ranged",
+                    "attribute": ["agility"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "combat"
+                },
+                {
+                    "name": "Animal Handling",
+                    "attribute": ["agility"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "general"
+                },
+                {
+                    "name": "Athletics",
+                    "attribute": ["brawn"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "general"
+                },
+                {
+                    "name": "Cool",
+                    "attribute": ["presence"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "general"
+                },
+                {
+                    "name": "Coordination",
+                    "attribute": ["agility"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "general"
+                },
+                {
+                    "name": "Discipline",
+                    "attribute": ["willpower"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "general"
+                },
+                {
+                    "name": "Medicine",
+                    "attribute": ["intellect"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "general"
+                },
+                {
+                    "name": "Perception",
+                    "attribute": ["cunning"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "general"
+                },
+                {
+                    "name": "Performance",
+                    "attribute": ["presence"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "general"
+                },
+                {
+                    "name": "Resilience",
+                    "attribute": ["brawn"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "general"
+                },
+                {
+                    "name": "Sailing",
+                    "attribute": ["cunning"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "general"
+                },
+                {
+                    "name": "Survival",
+                    "attribute": ["cunning"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "general"
+                },
+                {
+                    "name": "Vigilance",
+                    "attribute": ["willpower"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "general"
+                },
+                {
+                    "name": "Innate",
+                    "attribute": ["willpower"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "magic"
+                },
+                {
+                    "name": "Scholarly",
+                    "attribute": ["intellect"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "magic"
+                },
+                {
+                    "name": "Charm",
+                    "attribute": ["presence"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "speech"
+                },
+                {
+                    "name": "Coercion",
+                    "attribute": ["brawn", "willpower"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "speech"
+                },
+                {
+                    "name": "Deception",
+                    "attribute": ["cunning"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "speech"
+                },
+                {
+                    "name": "Insight",
+                    "attribute": ["cunning"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "speech"
+                },
+                {
+                    "name": "Leadership",
+                    "attribute": ["presence"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "speech"
+                },
+                {
+                    "name": "Negotiation",
+                    "attribute": ["presence"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "speech"
+                },
+                {
+                    "name": "Alchemy",
+                    "attribute": ["intellect"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "crafting"
+                },
+                {
+                    "name": "Fabrication",
+                    "attribute": ["intellect"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "crafting"
+                },
+                {
+                    "name": "Enchanting",
+                    "attribute": ["intellect"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "crafting"
+                },
+                {
+                    "name": "Arcana",
+                    "attribute": ["intellect"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "knowledge"
+                },
+                {
+                    "name": "Engineering",
+                    "attribute": ["intellect"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "knowledge"
+                },
+                {
+                    "name": "Linguistics",
+                    "attribute": ["intellect"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "knowledge"
+                },
+                {
+                    "name": "Lore",
+                    "attribute": ["intellect"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "knowledge"
+                },
+                {
+                    "name": "Nature",
+                    "attribute": ["intellect"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "knowledge"
+                },
+                {
+                    "name": "Society",
+                    "attribute": ["intellect"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "knowledge"
+                },
+                {
+                    "name": "Skulduggery",
+                    "attribute": ["cunning"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "covert"
+                },
+                {
+                    "name": "Stealth",
+                    "attribute": ["agility"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "covert"
+                },
+                {
+                    "name": "Streetwise",
+                    "attribute": ["cunning"],
+                    "classSkill": false,
+                    "specialProficiency": false,
+                    "ranks": 0,
+                    "category": "covert"
+                }
+            ]
+        }
+    },
+
+    "Item": {
+        "types": [
+            "Item"
+        ],
+
+        "templates": {
+            "generalItems": {
+                "weight": 10,
+                "value": 100,
+                "description": ""
+            }
+        },
+
+        "Item":{
+            "templates": ["generalItems"],
+            "type": "item",
+            "quantity": 1
+        }
+    }
+}

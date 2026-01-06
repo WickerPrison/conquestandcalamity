@@ -1,0 +1,78 @@
+.conquestandcalamity.sheet.characterSheet .sheet {
+  width: 700px;
+  height: 580px;
+}
+.conquestandcalamity.sheet.characterSheet .headerBox {
+  float: left;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+.conquestandcalamity.sheet.characterSheet .headerBox .infoFieldLabel {
+  width: 50%;
+  flex-basis: 50%;
+  flex-shrink: 0;
+}
+.conquestandcalamity.sheet.characterSheet .headerBox .classes {
+  width: 100%;
+  flex-basis: 100%;
+}
+.conquestandcalamity.sheet.characterSheet .statsGrid {
+  display: grid;
+  grid-template-columns: 15% 15% 15% 15% 15% 15%;
+  margin: 2px 0;
+  column-gap: 2%;
+}
+.conquestandcalamity.sheet.characterSheet .statsGrid .statBox {
+  border: 2px solid white;
+  display: block;
+  padding: 5px;
+}
+.conquestandcalamity.sheet.characterSheet .statsGrid .statBox .statName {
+  text-align: center;
+}
+.conquestandcalamity.sheet.characterSheet .statsGrid .statBox .statValue {
+  text-align: center;
+  font-size: large;
+}
+.conquestandcalamity.sheet.characterSheet .skillSection {
+  width: 95%;
+  margin: auto;
+}
+.conquestandcalamity.sheet.characterSheet .skillSection .skillHeader {
+  border-bottom: 1px solid white;
+  margin-bottom: 5px;
+}
+.conquestandcalamity.sheet.characterSheet .skillSection .skillHeader div {
+  text-align: center;
+}
+.conquestandcalamity.sheet.characterSheet .skillSection .skillHeader .skillSectionName {
+  font-size: large;
+  text-align: left;
+}
+.conquestandcalamity.sheet.characterSheet .skillSection .skillHeader .skillHeaderRanks {
+  grid-column: span 5;
+  text-align: left;
+}
+.conquestandcalamity.sheet.characterSheet .skillSection .skill {
+  display: grid;
+  grid-template-columns: 35% 15% 10% repeat(5, 8%);
+}
+.conquestandcalamity.sheet.characterSheet .skillSection .skill .skillName {
+  font-size: small;
+}
+.conquestandcalamity.sheet.characterSheet .skillSection .skill input {
+  margin: auto;
+  width: 10px;
+  height: 10px;
+}
+.conquestandcalamity.sheet.characterSheet .skills {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 550px;
+  margin-top: 15px;
+}

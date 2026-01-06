@@ -1,0 +1,16 @@
+<div>
+    <div class="statsGrid">
+        {{#each actor.system.attributes}}
+            <div> {{> "systems/conquestandcalamity/templates/partials/stat-box.hbs" this}}</div>
+        {{/each}}
+    </div>
+    <div class="skills">
+        <div> {{> "systems/conquestandcalamity/templates/partials/skill-section.hbs" name="Combat" category="combat" }} </div>
+        <div> {{> "systems/conquestandcalamity/templates/partials/skill-section.hbs" name="General" category="general" }} </div>
+        <div> {{> "systems/conquestandcalamity/templates/partials/skill-section.hbs" name="Crafting" category="crafting" }} </div>
+        <div> {{> "systems/conquestandcalamity/templates/partials/skill-section.hbs" name="Knowledge" category="knowledge" }} </div>
+        <div> {{> "systems/conquestandcalamity/templates/partials/skill-section.hbs" name="Magic" category="magic" }} </div>
+        <div> {{> "systems/conquestandcalamity/templates/partials/skill-section.hbs" name="Speech" category="speech" }} </div>
+        <div> {{> "systems/conquestandcalamity/templates/partials/skill-section.hbs" name="Covert" category="covert" }} </div>
+    </div>
+</div>
