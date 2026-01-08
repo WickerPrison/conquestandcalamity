@@ -42,6 +42,8 @@ function preloadHandlebarsTemplates() {
         "systems/conquestandcalamity/templates/partials/skill.hbs",
         "systems/conquestandcalamity/templates/partials/skill-section.hbs",
         "systems/conquestandcalamity/templates/partials/stats.hbs",
+        "systems/conquestandcalamity/templates/partials/main.hbs",
+        "systems/conquestandcalamity/templates/partials/resource-box.hbs",
     ];
     
     return loadTemplates(templatePaths);
