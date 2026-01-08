@@ -1,19 +1,25 @@
 <div class="mainSection">
-    {{!-- <img class="characterImg" src="{{actor.img}}" data-edit="img" data-action="editImage" title="{{actor.name}}"> --}}
-    {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" name="HP" value=12 max=15}}
-    {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" name="Temp HP" value=5}}
-    {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" name="Stamina" value=6 max=10}}
-    {{> "systems/conquestandcalamity/templates/partials/stat-box.hbs" name="Movement Points" value=15}}
-    {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" name="Healing Resistance" value=2}}
-    {{> "systems/conquestandcalamity/templates/partials/stat-box.hbs" name="Damage Reduction" value=15}}
-    {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" name="Other Resource" value=15}}
-    <div class="statBox">
-        <div class="statName">Defense</div>
-        <div class="defenseBox">
-            <div >Melee</div>
-            <div >Ranged</div>
-            <div >1</div>
-            <div >2</div>
+    <img class="characterImg" src="{{actor.img}}" data-edit="img" data-action="editImage" title="{{actor.name}}">
+    <div class="resourceHolder emphasis">
+        {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" name="HP" value=12 max=15}}
+        {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" name="Temp HP" value=5}}
+        {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" name="Stamina" value=6 max=10}}
+    </div>
+    <div class="resourceHolder wideResource">
+        {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" name="Healing Resist." value=2}}
+        {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" name="Other Resource" value=15}}
+    </div>
+    <div class="otherStats">
+        {{> "systems/conquestandcalamity/templates/partials/stat-box.hbs" name="Movement Points" value=15}}
+        {{> "systems/conquestandcalamity/templates/partials/stat-box.hbs" name="Damage Reduction" value=15}}
+        <div class="statBox">
+            <div class="statName">Defense</div>
+            <div class="defenseBox">
+                <div >Melee</div>
+                <div >Ranged</div>
+                <div >1</div>
+                <div >2</div>
+            </div>
         </div>
     </div>
 </div>

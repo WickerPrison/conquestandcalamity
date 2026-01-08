@@ -40,34 +40,62 @@
   text-align: center;
   font-size: large;
 }
-.conquestandcalamity.sheet.characterSheet .resource {
+.conquestandcalamity.sheet.characterSheet .mainSection {
+  display: grid;
+  grid-template-columns: 75px 75px auto auto auto;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .resourceHolder {
+  grid-column: 3 / span 3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .resourceHolder .resource {
   display: grid;
   grid-template-columns: 85px 30px;
-  width: 100%;
+  font-size: inherit;
 }
-.conquestandcalamity.sheet.characterSheet .resource .statBox {
+.conquestandcalamity.sheet.characterSheet .mainSection .resourceHolder .resource .statBox {
   width: 85px;
   margin: auto;
   grid-row: 1 / 3;
 }
-.conquestandcalamity.sheet.characterSheet .resource button {
+.conquestandcalamity.sheet.characterSheet .mainSection .resourceHolder .resource button {
   grid-column: 2;
   width: 22px;
   height: 22px;
   min-height: 22px;
   margin: auto;
 }
-.conquestandcalamity.sheet.characterSheet .mainSection {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
+.conquestandcalamity.sheet.characterSheet .mainSection .resourceHolder.emphasis {
+  font-size: var(--font-size-18);
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .resourceHolder.wideResource .resource {
+  grid-template-columns: 115px 30px;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .resourceHolder.wideResource .statBox {
+  width: 115px;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .otherStats {
+  grid-column: 1 / 6;
+  display: flex;
+  justify-content: space-evenly;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .otherStats .statBox {
+  width: 115px;
 }
 .conquestandcalamity.sheet.characterSheet .mainSection .characterImg {
   grid-column: 1 / 3;
   grid-row: 1 / 3;
+  width: 150px;
 }
 .conquestandcalamity.sheet.characterSheet .mainSection .defenseBox {
   display: grid;
   grid-template-columns: 50% 50%;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .defenseBox div {
+  text-align: center;
 }
 .conquestandcalamity.sheet.characterSheet .skills {
   display: flex;
