@@ -7,7 +7,6 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  border-bottom: 2px solid white;
   padding-bottom: 5px;
   margin-bottom: 5px;
 }
@@ -20,24 +19,138 @@
   width: 100%;
   flex-basis: 100%;
 }
+.conquestandcalamity.sheet.characterSheet .content {
+  margin-top: 4px;
+}
 .conquestandcalamity.sheet.characterSheet .statsGrid {
   display: grid;
   grid-template-columns: 15% 15% 15% 15% 15% 15%;
   margin: 2px 0;
   column-gap: 2%;
 }
-.conquestandcalamity.sheet.characterSheet .statsGrid .statBox {
-  border: 2px solid white;
+.conquestandcalamity.sheet.characterSheet .statBox {
+  border: 1px solid var(--color-light-5);
   display: block;
   padding: 5px;
   border-radius: 5px;
+  width: 93px;
 }
-.conquestandcalamity.sheet.characterSheet .statsGrid .statBox .statName {
+.conquestandcalamity.sheet.characterSheet .statBox .statName {
   text-align: center;
+  color: white;
+  font-weight: bold;
 }
-.conquestandcalamity.sheet.characterSheet .statsGrid .statBox .statValue {
+.conquestandcalamity.sheet.characterSheet .statBox .statValue {
   text-align: center;
   font-size: large;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection {
+  display: grid;
+  grid-template-columns: 75px 75px auto auto auto;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .resourceHolder {
+  grid-column: 3 / span 3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .resourceHolder .resource {
+  display: grid;
+  grid-template-columns: 85px 30px;
+  font-size: inherit;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .resourceHolder .resource .statBox {
+  width: 85px;
+  margin: auto;
+  grid-row: 1 / 3;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .resourceHolder .resource button {
+  grid-column: 2;
+  width: 22px;
+  height: 22px;
+  min-height: 22px;
+  margin: auto;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .resourceHolder.emphasis {
+  font-size: var(--font-size-18);
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .resourceHolder.wideResource .resource {
+  grid-template-columns: 115px 30px;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .resourceHolder.wideResource .statBox {
+  width: 115px;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .otherStats {
+  grid-column: 1 / 6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border-top: 2px solid var(--color-light-5);
+  border-bottom: 2px solid var(--color-light-5);
+  padding: 3px 0;
+  font-size: var(--font-size-16);
+  margin-top: 4px;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .otherStats .statBox {
+  width: 115px;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .otherStats .statText {
+  flex-basis: 100%;
+  font-size: var(--font-size-14);
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .otherStats .statLabel {
+  color: white;
+  font-weight: bold;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .statsHeader {
+  grid-column: 1 / 6;
+  text-align: center;
+  margin-top: 5px;
+  font-size: var(--font-size-18);
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .characterImg {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  width: 150px;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .defenseBox {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .defenseBox div {
+  text-align: center;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .attack {
+  grid-column: 1 / 6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  border-top: 1px solid var(--color-light-5);
+  border-bottom: 1px solid var(--color-light-5);
+  padding: 5px 0;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .attack .attackName {
+  flex-basis: 27%;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .attack .attackSkill {
+  flex-basis: 23%;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .attack .attackRange {
+  flex-basis: 19%;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .attack .attackDamage {
+  flex-basis: 24%;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .attack .attackCrit {
+  flex-basis: 7%;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .attack .attackSpecials {
+  flex-basis: 100%;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .attack .label {
+  color: white;
+  font-weight: bold;
 }
 .conquestandcalamity.sheet.characterSheet .skills {
   display: flex;
@@ -49,14 +162,14 @@
 }
 .conquestandcalamity.sheet.characterSheet .skills .skillsSpacer {
   flex-basis: 100%;
-  width: 2.5%;
+  width: 2%;
 }
 .conquestandcalamity.sheet.characterSheet .skills .skillsMidSpacer {
   flex-basis: 100%;
-  width: 5%;
+  width: 6%;
 }
 .conquestandcalamity.sheet.characterSheet .skills .skillHeader {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--color-light-5);
   margin-bottom: 5px;
   display: grid;
   grid-template-columns: 35% 15% 10% 15%;
@@ -81,9 +194,12 @@
 }
 .conquestandcalamity.sheet.characterSheet .skills .skill .skillName {
   font-size: small;
+  vertical-align: middle;
 }
-.conquestandcalamity.sheet.characterSheet .skills .skill input {
+.conquestandcalamity.sheet.characterSheet .skills .skill input[type=checkbox] {
   margin: auto;
+  margin-top: auto;
+  --checkbox-size: 19px;
 }
 .conquestandcalamity.sheet.characterSheet .skills .skill .rankInput {
   height: 17px;
@@ -93,7 +209,7 @@
   width: 16px;
   height: 16px;
   min-height: 16px;
-  margin: auto;
+  margin: 0 auto;
   padding: 0;
   text-align: center;
   vertical-align: middle;

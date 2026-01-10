@@ -1,0 +1,32 @@
+<div class="mainSection">
+    <img class="characterImg" src="{{actor.img}}" data-edit="img" data-action="editImage" title="{{actor.name}}">
+    <div class="resourceHolder emphasis">
+        {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" name="HP" value=12 max=15}}
+        {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" name="Temp HP" value=5}}
+        {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" name="Stamina" value=6 max=10}}
+    </div>
+    <div class="resourceHolder wideResource">
+        {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" name="Healing Resist." value=2}}
+        {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" name="Other Resource" value=15}}
+    </div>
+    <div class="otherStats">
+        <div><span class="statLabel">Movement Points:</span> 15</div>
+        <div><span class="statLabel">Damage Reduction:</span> 15</div>
+        <div><span class="statLabel">Defense (M|R):</span> 1 | 2</div>
+    </div>
+
+    <div class="otherStats" style="border-top: none">
+        <div class="statText"><span class="statLabel">Resistances:</span> Cold 4, Fire 2</div>
+        <div class="statText"><span class="statLabel">Weaknesses:</span> Necrotic 3, Radiant 7</div>
+        <div class="statText"><span class="statLabel">Immunities:</span> Poison, Lightning</div>
+    </div>
+    <div class="otherStats" style="border-top: none">
+        <div class="statText"><span class="statLabel">Conditions:</span> Disoriented 3, Burning</div>
+        <div class="statText"><span class="statLabel">Diseases:</span> Lycanthropy</div>
+        <div class="statText"><span class="statLabel">Critical Injuries:</span> Minor Nick (3)</div>
+    </div>
+    <div class="statsHeader">Attacks</div>
+    {{> "systems/conquestandcalamity/templates/partials/attack.hbs"}}
+    {{> "systems/conquestandcalamity/templates/partials/attack.hbs"}}
+    {{> "systems/conquestandcalamity/templates/partials/attack.hbs"}}
+</div>

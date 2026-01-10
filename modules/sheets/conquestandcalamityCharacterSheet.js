@@ -15,7 +15,8 @@ export default class conquestandcalamityCharacterSheet extends api.HandlebarsApp
             closeOnSubmit: false
         },
         position: {
-            width: 650
+            width: 650,
+            height: 700
         }
     }
 

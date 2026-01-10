@@ -1,0 +1,12 @@
+<div class="resource">
+    <div class="statBox">
+        <div class="statName">{{name}}</div>
+        {{#if max}}
+            <div class="statValue">{{value}} / {{max}}</div>
+        {{else}}    
+            <div class="statValue">{{value}}</div>
+        {{/if}}
+    </div>
+    <button style="margin-bottom: 3px">+</button>
+    <button style="margin-top: 3px">-</button>
+</div>

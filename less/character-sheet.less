@@ -10,7 +10,6 @@
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        border-bottom: 2px solid white;
         padding-bottom: 5px;
         margin-bottom: 5px;
 
@@ -26,30 +25,170 @@
         }
     }
 
+    .content {
+        margin-top: 4px;
+    }
+
     .statsGrid{
         display: grid;
         grid-template-columns: 15% 15% 15% 15% 15% 15%;
         margin: 2px 0;
         column-gap: 2%;
 
-        .statBox {
-            border: 2px solid white;
-            display: block;
-            padding: 5px;
-            border-radius: 5px;
+    }
+    
+    .statBox {
+        border: 1px solid var(--color-light-5);
+        display: block;
+        padding: 5px;
+        border-radius: 5px;
+        width: 93px;
 
-            .statName{
-                text-align: center;
+        .statName{
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .statValue {
+            text-align: center;
+            font-size: large;
+        }
+    }  
+
+    .mainSection {
+        display: grid;
+        grid-template-columns: 75px 75px auto auto auto;
+
+        .resourceHolder {
+            grid-column: 3 / span 3;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+
+            .resource {
+                display: grid;
+                grid-template-columns: 85px 30px;
+                font-size: inherit;
+
+                .statBox {
+                    width: 85px;
+                    margin: auto;
+                    grid-row: 1 / 3;
+                }
+
+                button {
+                    grid-column: 2;
+                    width: 22px;
+                    height: 22px;
+                    min-height: 22px;
+                    margin: auto;
+                }
+            }  
+        }
+
+        .resourceHolder.emphasis {
+            font-size: var(--font-size-18);
+        }
+
+        .resourceHolder.wideResource {
+            .resource {
+                grid-template-columns: 115px 30px;
             }
 
-            .statValue {
+            .statBox {
+                width: 115px;
+            }
+        }
+
+        .otherStats {
+            grid-column: 1 / 6;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            border-top: 2px solid var(--color-light-5);
+            border-bottom: 2px solid var(--color-light-5);
+            padding: 3px 0;
+            font-size: var(--font-size-16);
+            margin-top: 4px;
+
+            .statBox {
+                width: 115px;
+            }
+
+            .statText {
+                flex-basis: 100%;
+                font-size: var(--font-size-14);
+            }
+
+            .statLabel {
+                color: white;
+                font-weight: bold;
+            }
+        }
+
+        .statsHeader {
+            grid-column: 1 / 6;
+            text-align: center;
+            margin-top: 5px;
+            font-size: var(--font-size-18);
+        }
+
+        .characterImg {
+            grid-column: 1 / 3;
+            grid-row: 1 / 3;
+            width: 150px;
+        }
+
+        .defenseBox {
+            display: grid;
+            grid-template-columns: 50% 50%;
+
+            div {
                 text-align: center;
-                font-size: large;
+            }
+        }
+
+        .attack {
+            grid-column: 1 / 6;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left;
+            border-top: 1px solid var(--color-light-5);
+            border-bottom: 1px solid var(--color-light-5);
+            padding: 5px 0;
+
+            .attackName {
+                flex-basis: 27%;
+            }
+
+            .attackSkill {
+                flex-basis: 23%;
+            }
+
+            .attackRange {
+                flex-basis: 19%;
+            }
+
+            .attackDamage {
+                flex-basis: 24%;
+            }
+
+            .attackCrit {
+                flex-basis: 7%;
+            }
+
+            .attackSpecials {
+                flex-basis: 100%;
+            }
+
+            .label {
+                color: white;
+                font-weight: bold;
             }
         }
     }
-
-    
 
     .skills {
         display: flex;
@@ -61,16 +200,16 @@
 
         .skillsSpacer{
             flex-basis: 100%;
-            width: 2.5%;
+            width: 2%;
         }
 
         .skillsMidSpacer {
             flex-basis: 100%;
-            width: 5%;
+            width: 6%;
         }
 
         .skillHeader {
-            border-bottom: 1px solid white;
+            border-bottom: 1px solid var(--color-light-5);
             margin-bottom: 5px;
             display: grid;
             grid-template-columns: 35% 15% 10% 15%;
@@ -99,10 +238,13 @@
 
             .skillName {
                 font-size: small;
+                vertical-align: middle;
             }
 
-            input {
+            input[type=checkbox] {
                 margin: auto;
+                margin-top: auto;
+                --checkbox-size: 19px;
             }
 
             .rankInput {
@@ -115,7 +257,7 @@
                 width: 16px;
                 height: 16px;
                 min-height: 16px;
-                margin: auto;
+                margin: 0 auto;
                 padding: 0;
                 text-align: center;
                 vertical-align: middle;
