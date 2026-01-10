@@ -10,14 +10,41 @@
   padding-bottom: 5px;
   margin-bottom: 5px;
 }
-.conquestandcalamity.sheet.characterSheet .headerBox .infoFieldLabel {
+.conquestandcalamity.sheet.characterSheet .headerBox .headerInfo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 58%;
+  width: 58%;
+}
+.conquestandcalamity.sheet.characterSheet .headerBox .headerInfo .infoFieldName {
+  width: 100%;
+  flex-basis: 100%;
+}
+.conquestandcalamity.sheet.characterSheet .headerBox .headerInfo .infoFieldLabel {
   width: 50%;
   flex-basis: 50%;
   flex-shrink: 0;
 }
-.conquestandcalamity.sheet.characterSheet .headerBox .classes {
+.conquestandcalamity.sheet.characterSheet .headerBox .headerInfo .classes {
   width: 100%;
   flex-basis: 100%;
+}
+.conquestandcalamity.sheet.characterSheet .headerBox .resource {
+  display: grid;
+  grid-template-columns: 95px 30px;
+  font-size: inherit;
+  flex-basis: 21%;
+}
+.conquestandcalamity.sheet.characterSheet .headerBox .resource .statBox {
+  margin: auto;
+  grid-row: 1 / 3;
+}
+.conquestandcalamity.sheet.characterSheet .headerBox .resource button {
+  grid-column: 2;
+  width: 22px;
+  height: 22px;
+  min-height: 22px;
+  margin: auto;
 }
 .conquestandcalamity.sheet.characterSheet .content {
   margin-top: 4px;
