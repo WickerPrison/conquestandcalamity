@@ -7,7 +7,6 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  border-bottom: 2px solid white;
   padding-bottom: 5px;
   margin-bottom: 5px;
 }
@@ -19,6 +18,9 @@
 .conquestandcalamity.sheet.characterSheet .headerBox .classes {
   width: 100%;
   flex-basis: 100%;
+}
+.conquestandcalamity.sheet.characterSheet .content {
+  margin-top: 4px;
 }
 .conquestandcalamity.sheet.characterSheet .statsGrid {
   display: grid;
@@ -80,15 +82,32 @@
 .conquestandcalamity.sheet.characterSheet .mainSection .otherStats {
   grid-column: 1 / 6;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  padding: 3px 0;
+  font-size: var(--font-size-16);
+  margin-top: 4px;
 }
 .conquestandcalamity.sheet.characterSheet .mainSection .otherStats .statBox {
   width: 115px;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .otherStats .statText {
+  flex-basis: 100%;
+  font-size: var(--font-size-14);
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .statsHeader {
+  grid-column: 1 / 6;
+  text-align: center;
+  margin-top: 5px;
+  font-size: var(--font-size-18);
 }
 .conquestandcalamity.sheet.characterSheet .mainSection .characterImg {
   grid-column: 1 / 3;
   grid-row: 1 / 3;
   width: 150px;
+  border: 1px solid white;
 }
 .conquestandcalamity.sheet.characterSheet .mainSection .defenseBox {
   display: grid;
@@ -96,6 +115,33 @@
 }
 .conquestandcalamity.sheet.characterSheet .mainSection .defenseBox div {
   text-align: center;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .attack {
+  grid-column: 1 / 6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 5px 0;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .attack .attackName {
+  flex-basis: 27%;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .attack .attackSkill {
+  flex-basis: 23%;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .attack .attackRange {
+  flex-basis: 19%;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .attack .attackDamage {
+  flex-basis: 24%;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .attack .attackCrit {
+  flex-basis: 7%;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .attack .attackSpecials {
+  flex-basis: 100%;
 }
 .conquestandcalamity.sheet.characterSheet .skills {
   display: flex;

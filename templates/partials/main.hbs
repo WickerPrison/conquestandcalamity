@@ -10,16 +10,23 @@
         {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" name="Other Resource" value=15}}
     </div>
     <div class="otherStats">
-        {{> "systems/conquestandcalamity/templates/partials/stat-box.hbs" name="Movement Points" value=15}}
-        {{> "systems/conquestandcalamity/templates/partials/stat-box.hbs" name="Damage Reduction" value=15}}
-        <div class="statBox">
-            <div class="statName">Defense</div>
-            <div class="defenseBox">
-                <div >Melee</div>
-                <div >Ranged</div>
-                <div >1</div>
-                <div >2</div>
-            </div>
-        </div>
+        <div>Movement Points: 15</div>
+        <div>Damage Reduction: 15</div>
+        <div>Defense (M|R): 1 | 2</div>
     </div>
+
+    <div class="otherStats" style="border-top: none">
+        <div class="statText">Resistances: Cold 4, Fire 2</div>
+        <div class="statText">Weaknesses: Necrotic 3, Radiant 7</div>
+        <div class="statText">Immunities: Poison, Lightning</div>
+    </div>
+    <div class="otherStats" style="border-top: none">
+        <div class="statText">Conditions: Disoriented 3, Burning</div>
+        <div class="statText">Diseases: Lycanthropy</div>
+        <div class="statText">Critical Injuries: Minor Nick (3)</div>
+    </div>
+    <div class="statsHeader">Attacks</div>
+    {{> "systems/conquestandcalamity/templates/partials/attack.hbs"}}
+    {{> "systems/conquestandcalamity/templates/partials/attack.hbs"}}
+    {{> "systems/conquestandcalamity/templates/partials/attack.hbs"}}
 </div>

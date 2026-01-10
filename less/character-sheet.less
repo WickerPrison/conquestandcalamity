@@ -10,7 +10,6 @@
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        border-bottom: 2px solid white;
         padding-bottom: 5px;
         margin-bottom: 5px;
 
@@ -24,6 +23,10 @@
             width: 100%;
             flex-basis: 100%;
         }
+    }
+
+    .content {
+        margin-top: 4px;
     }
 
     .statsGrid{
@@ -100,17 +103,36 @@
         .otherStats {
             grid-column: 1 / 6;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-evenly;
+            border-top: 2px solid white;
+            border-bottom: 2px solid white;
+            padding: 3px 0;
+            font-size: var(--font-size-16);
+            margin-top: 4px;
 
             .statBox {
                 width: 115px;
             }
+
+            .statText {
+                flex-basis: 100%;
+                font-size: var(--font-size-14);
+            }
+        }
+
+        .statsHeader {
+            grid-column: 1 / 6;
+            text-align: center;
+            margin-top: 5px;
+            font-size: var(--font-size-18);
         }
 
         .characterImg {
             grid-column: 1 / 3;
             grid-row: 1 / 3;
             width: 150px;
+            border: 1px solid white;
         }
 
         .defenseBox {
@@ -119,6 +141,40 @@
 
             div {
                 text-align: center;
+            }
+        }
+
+        .attack {
+            grid-column: 1 / 6;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left;
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+            padding: 5px 0;
+
+            .attackName {
+                flex-basis: 27%;
+            }
+
+            .attackSkill {
+                flex-basis: 23%;
+            }
+
+            .attackRange {
+                flex-basis: 19%;
+            }
+
+            .attackDamage {
+                flex-basis: 24%;
+            }
+
+            .attackCrit {
+                flex-basis: 7%;
+            }
+
+            .attackSpecials {
+                flex-basis: 100%;
             }
         }
     }
