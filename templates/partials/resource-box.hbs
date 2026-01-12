@@ -1,10 +1,10 @@
 <div class="resource">
     <div class="statBox">
-        <div class="statName">{{name}}</div>
+        <div class="statName">{{displayName}}</div>
         {{#if max}}
             <div class="statValue">{{value}} / {{max}}</div>
         {{else}}    
-            <div class="statValue">{{value}}</div>
+            <input class="statValue" type="number" name="{{foundryName}}" value={{value}}>
         {{/if}}
     </div>
     <button style="margin-bottom: 3px">+</button>
