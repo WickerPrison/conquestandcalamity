@@ -9,7 +9,9 @@
             "race": "Halfling",
             "background": "Cursed",
             "field": "Scholarly Magic",
-            "classes": ["Necromancer", "Researcher"],
+            "classes": "Necromancer, Researcher",
+            "xp": 25,
+            "totalXp": 420,
             "mDef": 1,
             "rDef": 2,
             "hp":{

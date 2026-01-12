@@ -1,5 +1,11 @@
 <div class="headerBox">
-    <div class="infoFieldLabel">Race: {{actor.system.race}}</div>
-    <div class="infoFieldLabel">Field: {{actor.system.field}}</div>
-    <div class="classes">Classes: Necromancer, Researcher</div>
+    <div class="headerInfo">
+        <div class="infoFieldText"><span class="infoFieldLabel">Name:</span> <input type="text" name="name" value="{{actor.name}}"></div>
+        <div class="infoFieldText"><span class="infoFieldLabel">Race:</span> <input type="text" name="system.race" value="{{system.race}}"></div>
+        <div class="infoFieldText"><span class="infoFieldLabel">Background:</span> <input type="text" name="system.background" value="{{system.background}}"></div>
+        <div class="infoFieldText"><span class="infoFieldLabel">Field:</span> <input type="text" name="system.field" value="{{system.field}}"></div>
+        <div class="classes"><span class="infoFieldLabel">Classes:</span> <input type="text" name="system.classes" value="{{system.classes}}"></div>
+    </div>
+    {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" displayName="Available XP" foundryName="system.xp" value=system.xp}}
+    {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" displayName="Total XP" foundryName="system.totalXp" value=system.totalXp}}
 </div>
