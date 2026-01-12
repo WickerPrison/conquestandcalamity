@@ -2,28 +2,43 @@
   width: 700px;
   height: 580px;
 }
+.conquestandcalamity.sheet.characterSheet input[type=text] {
+  flex-basis: 100%;
+  flex-shrink: 1;
+  height: 17px;
+  margin: 0 5px 0 2px;
+  line-height: 0;
+  padding: 0 2px;
+  color: var(--color-text-primary);
+  background: none;
+}
 .conquestandcalamity.sheet.characterSheet .headerBox {
   float: left;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 5px;
-  margin-bottom: 5px;
 }
 .conquestandcalamity.sheet.characterSheet .headerBox .headerInfo {
   display: flex;
   flex-wrap: wrap;
   flex-basis: 58%;
   width: 58%;
+  font-size: var(--font-size-14);
 }
 .conquestandcalamity.sheet.characterSheet .headerBox .headerInfo .infoFieldName {
   width: 100%;
   flex-basis: 100%;
+  display: flex;
 }
-.conquestandcalamity.sheet.characterSheet .headerBox .headerInfo .infoFieldLabel {
+.conquestandcalamity.sheet.characterSheet .headerBox .headerInfo .infoFieldText {
   width: 50%;
   flex-basis: 50%;
   flex-shrink: 0;
+}
+.conquestandcalamity.sheet.characterSheet .headerBox .headerInfo .infoFieldLabel {
+  font-weight: bold;
+  color: white;
 }
 .conquestandcalamity.sheet.characterSheet .headerBox .headerInfo .classes {
   width: 100%;
@@ -41,13 +56,13 @@
 }
 .conquestandcalamity.sheet.characterSheet .headerBox .resource button {
   grid-column: 2;
-  width: 22px;
-  height: 22px;
-  min-height: 22px;
+  width: 19px;
+  height: 19px;
+  min-height: 19px;
   margin: auto;
 }
 .conquestandcalamity.sheet.characterSheet .content {
-  margin-top: 4px;
+  margin-top: 5px;
 }
 .conquestandcalamity.sheet.characterSheet .statsGrid {
   display: grid;
@@ -58,7 +73,7 @@
 .conquestandcalamity.sheet.characterSheet .statBox {
   border: 1px solid var(--color-light-5);
   display: block;
-  padding: 5px;
+  padding: 1px;
   border-radius: 5px;
   width: 93px;
 }
@@ -94,9 +109,9 @@
 }
 .conquestandcalamity.sheet.characterSheet .mainSection .resourceHolder .resource button {
   grid-column: 2;
-  width: 22px;
-  height: 22px;
-  min-height: 22px;
+  width: 20px;
+  height: 20px;
+  min-height: 20px;
   margin: auto;
 }
 .conquestandcalamity.sheet.characterSheet .mainSection .resourceHolder.emphasis {
