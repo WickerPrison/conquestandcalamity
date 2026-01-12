@@ -93,6 +93,7 @@
   text-align: center;
   color: white;
   font-weight: bold;
+  margin: 0;
 }
 .conquestandcalamity.sheet.characterSheet .statBox .statValue {
   text-align: center;
@@ -118,6 +119,9 @@
   width: 85px;
   margin: auto;
   grid-row: 1 / 3;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .resourceHolder .resource .statBox .statWithMax input.statValue {
+  width: 40%;
 }
 .conquestandcalamity.sheet.characterSheet .mainSection .resourceHolder .resource button {
   grid-column: 2;

@@ -1,13 +1,13 @@
 <div class="mainSection">
     <img class="characterImg" src="{{actor.img}}" data-edit="img" data-action="editImage" title="{{actor.name}}">
     <div class="resourceHolder emphasis">
-        {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" displayName="HP" value=12 max=15}}
-        {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" displayName="Temp HP" value=5}}
-        {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" displayName="Stamina" value=6 max=10}}
+        {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" displayName="HP" foundryName="system.hp.current" value=system.hp.current foundryMaxName="system.hp.max" maxValue=system.hp.max}}
+        {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" displayName="Temp HP" foundryName="system.hp.temp" value=system.hp.temp}}
+        {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" displayName="Stamina" foundryName="system.stamina.current" value=system.stamina.current foundryMaxName="system.stamina.max" maxValue=system.stamina.max}}
     </div>
     <div class="resourceHolder wideResource">
-        {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" displayName="Healing Resist." value=2}}
-        {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" displayName="Other Resource" value=15}}
+        {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" displayName="Healing Resist." foundryName="system.healingResistance" value=system.healingResistance}}
+        {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" displayName="system.otherResourceName" nameValue=system.otherResourceName foundryName="system.otherResource" value=system.otherResource}}
     </div>
     <div class="otherStats">
         <div><span class="statLabel">Movement Points:</span> 15</div>

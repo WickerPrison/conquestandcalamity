@@ -26,7 +26,8 @@
             "movementPoints": 15,
             "healingResistance": 0,
             "damageReduction": 0,
-            "devotion": 0,
+            "otherResourceName":"Other Resource",
+            "otherResource": 0,
             "attributes":[
                 { "name": "Agility", "value": 0 },
                 { "name": "Brawn", "value": 0 },
