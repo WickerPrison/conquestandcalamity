@@ -1,13 +1,13 @@
 <div class="mainSection">
     <img class="characterImg" src="{{actor.img}}" data-edit="img" data-action="editImage" title="{{actor.name}}">
     <div class="resourceHolder emphasis">
-        {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" name="HP" value=12 max=15}}
-        {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" name="Temp HP" value=5}}
-        {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" name="Stamina" value=6 max=10}}
+        {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" displayName="HP" value=12 max=15}}
+        {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" displayName="Temp HP" value=5}}
+        {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" displayName="Stamina" value=6 max=10}}
     </div>
     <div class="resourceHolder wideResource">
-        {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" name="Healing Resist." value=2}}
-        {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" name="Other Resource" value=15}}
+        {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" displayName="Healing Resist." value=2}}
+        {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" displayName="Other Resource" value=15}}
     </div>
     <div class="otherStats">
         <div><span class="statLabel">Movement Points:</span> 15</div>
