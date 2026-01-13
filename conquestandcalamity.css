@@ -153,13 +153,24 @@
 .conquestandcalamity.sheet.characterSheet .mainSection .otherStats .statBox {
   width: 115px;
 }
+.conquestandcalamity.sheet.characterSheet .mainSection .otherStats .statNum input {
+  width: 30px;
+  padding-left: 2px;
+}
+.conquestandcalamity.sheet.characterSheet .mainSection .otherStats .statNum.defenseStat input {
+  width: 15px;
+  text-align: center;
+  padding-left: 0;
+}
 .conquestandcalamity.sheet.characterSheet .mainSection .otherStats .statText {
   flex-basis: 100%;
   font-size: var(--font-size-14);
+  display: flex;
 }
 .conquestandcalamity.sheet.characterSheet .mainSection .otherStats .statLabel {
   color: white;
   font-weight: bold;
+  flex-shrink: 0;
 }
 .conquestandcalamity.sheet.characterSheet .mainSection .statsHeader {
   grid-column: 1 / 6;

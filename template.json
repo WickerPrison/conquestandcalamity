@@ -20,7 +20,7 @@
                 "temp": 0
             },
             "stamina":{
-                "max": 0,
+                "max": 3,
                 "current": 0
             },
             "movementPoints": 15,
@@ -28,6 +28,12 @@
             "damageReduction": 0,
             "otherResourceName":"Other Resource",
             "otherResource": 0,
+            "resistances": "",
+            "weaknesses": "",
+            "immunities": "",
+            "conditions": "",
+            "diseases":"",
+            "criticalInjuries":"",
             "attributes":[
                 { "name": "Agility", "value": 0 },
                 { "name": "Brawn", "value": 0 },

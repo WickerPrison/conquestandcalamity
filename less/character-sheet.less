@@ -189,14 +189,31 @@
                 width: 115px;
             }
 
+            .statNum {
+                input {
+                    width: 30px;
+                    padding-left: 2px;
+                }
+            }
+
+            .statNum.defenseStat {
+                input {
+                    width: 15px;
+                    text-align: center;
+                    padding-left: 0;
+                }
+            }
+
             .statText {
                 flex-basis: 100%;
                 font-size: var(--font-size-14);
+                display: flex;
             }
 
             .statLabel {
                 color: white;
                 font-weight: bold;
+                flex-shrink: 0;
             }
         }
 

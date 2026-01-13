@@ -10,20 +10,20 @@
         {{> "systems/conquestandcalamity/templates/partials/resource-box.hbs" displayName="system.otherResourceName" nameValue=system.otherResourceName foundryName="system.otherResource" value=system.otherResource}}
     </div>
     <div class="otherStats">
-        <div><span class="statLabel">Movement Points:</span> 15</div>
-        <div><span class="statLabel">Damage Reduction:</span> 15</div>
-        <div><span class="statLabel">Defense (M|R):</span> 1 | 2</div>
+        <div class="statNum"><span class="statLabel">Movement Points:</span> <input type="number" name="system.movementPoints" value="{{system.movementPoints}}"></div>
+        <div class="statNum"><span class="statLabel">Damage Reduction:</span> <input type="number" name="system.damageReduction" value="{{system.damageReduction}}"></div>
+        <div class="statNum defenseStat"><span class="statLabel">Defense (M|R): </span><input type="number" name="system.mDef" value="{{system.mDef}}">|<input type="number" name="system.rDef" value="{{system.rDef}}"></div>
     </div>
 
     <div class="otherStats" style="border-top: none">
-        <div class="statText"><span class="statLabel">Resistances:</span> Cold 4, Fire 2</div>
-        <div class="statText"><span class="statLabel">Weaknesses:</span> Necrotic 3, Radiant 7</div>
-        <div class="statText"><span class="statLabel">Immunities:</span> Poison, Lightning</div>
+        <div class="statText"><span class="statLabel">Resistances:</span> <input type="text" name="system.resistances" value="{{system.resistances}}"></div>
+        <div class="statText"><span class="statLabel">Weaknesses:</span> <input type="text" name="system.weaknesses" value="{{system.weaknesses}}"></div>
+        <div class="statText"><span class="statLabel">Immunities:</span> <input type="text" name="system.immunities" value="{{system.immunities}}"></div>
     </div>
     <div class="otherStats" style="border-top: none">
-        <div class="statText"><span class="statLabel">Conditions:</span> Disoriented 3, Burning</div>
-        <div class="statText"><span class="statLabel">Diseases:</span> Lycanthropy</div>
-        <div class="statText"><span class="statLabel">Critical Injuries:</span> Minor Nick (3)</div>
+        <div class="statText"><span class="statLabel">Conditions:</span> <input type="text" name="system.conditions" value="{{system.conditions}}"></div>
+        <div class="statText"><span class="statLabel">Diseases:</span> <input type="text" name="system.diseases" value="{{system.diseases}}"></div>
+        <div class="statText"><span class="statLabel">Critical Injuries:</span> <input type="text" name="system.criticalInjuries" value="{{system.criticalInjuries}}"></div>
     </div>
     <div class="statsHeader">Attacks</div>
     {{> "systems/conquestandcalamity/templates/partials/attack.hbs"}}
